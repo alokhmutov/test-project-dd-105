@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project allows you to reproduce Encoding::CompatibilityError in DeviceDetector gem. 
+https://github.com/podigee/device_detector/issues/105
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. run a server
+2. open a console
+3. `HTTParty.get("http://localhost:3000","headers": {'User-Agent':"Mon User-Agent personnalisé"})`
